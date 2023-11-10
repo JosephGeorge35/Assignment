@@ -1,27 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Signup</h1>
-    </header>
-<!DOCTYPE html>
-<html lang="en">
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Signup Page</title>
+  <title>Sign Up</title>
 </head>
 <body>
-  <div class="container">
-    <h2>Create an Account</h2>
-    <form action="signup_process.php" method="post">
+  <div class="signup-container">
+    <h1>Sign Up</h1>
+    <form action="#" method="post">
       <label for="firstName">First Name:</label>
       <input type="text" id="firstName" name="firstName" required>
 
@@ -39,6 +27,19 @@
 
       <label for="dob">Date of Birth:</label>
       <input type="date" id="dob" name="dob" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" required></textarea>
 
       <label for="gender">Gender:</label>
       <select id="gender" name="gender" required>
@@ -76,65 +77,10 @@
             <br/>
             <label for="hobbies">Hobbies:</label>
             <textarea id="hobbies" name="hobbies"></textarea>
-            <br/>-->
+            <br/>
 
       <button type="submit">Sign Up</button>
     </form>
   </div>
-</body>
-</html>
-
-    <main>
-        <form action="#">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
-            <br/>
-
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-            <br/>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <br/>
-            <label for="confirmPassword">Confirm Password:</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" required>
-            <br/>
-            <label for="phoneNumber">Phone Number:</label>
-            <input type="tel" id="phoneNumber" name="phoneNumber">
-            <br/>
-            <label for="address">Address:</label>
-            <textarea id="address" name="address"></textarea>
-            <br/>
-            <label for="country">Country:</label>
-            <select id="country" name="country">
-                <option value="Afghanistan">Afghanistan</option>
-                <option value="Albania">Albania</option>
-                </select>
-                <br/>
-            <label for="city">City:</label>
-            <input type="text" id="city" name="city">
-            <br/>
-            <label for="state">State:</label>
-            <input type="text" id="state" name="state">
-            <br/>
-            <label for="zipCode">Zip Code:</label>
-            <input type="text" id="zipCode" name="zipCode">
-            <br/>
-            <label for="occupation">Occupation:</label>
-            <input type="text" id="occupation" name="occupation">
-            <br/>
-            <label for="skills">Skills:</label>
-            <textarea id="skills" name="skills"></textarea>
-            <br/>
-            <label for="hobbies">Hobbies:</label>
-            <textarea id="hobbies" name="hobbies"></textarea>
-            <br/>
-            <input type="submit" value="Signup">
-        </form>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 My Portfolio</p>
-    </footer>
 </body>
 </html>
