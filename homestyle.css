@@ -64,4 +64,35 @@ body {
     margin-right: auto;
     width: 50%;
   }
-  
+
+
+
+
+
+
+
+
+body {
+  font-family: sans-serif;
+}
+
+.about-me {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-me h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about-me p {
+  line-height: 1.5em;
+}
+
+.about-me img {
+  float: left;
+  margin: 0 20px 20px 0;
+  border-radius: 50%;
+}
